@@ -276,3 +276,34 @@ textarea {
   margin: 0 auto;
 }
 
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.black-bar.dark-mode {
+  background-color: #111;
+}
+
+.dark-mode .email-button {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-mode .linkedin-logo {
+  filter: invert(1);
+}
+
