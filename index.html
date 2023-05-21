@@ -19,9 +19,45 @@
 <body style="color: rgb(0,0,0);">
     <section id="hero" style="width: 100%;height: 100vh;">
         <nav class="navbar navbar-light navbar-expand-md" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="250">
-            <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <!-- 
+            The nav element has the following attributes:
+            - Class: "navbar navbar-light navbar-expand-md": It applies the styles and behavior of a navigation bar. The "navbar-light" class specifies a light color scheme, and "navbar-expand-md" ensures that the navigation bar expands to fill the horizontal space on medium and larger screens.
+            - Data Attribute: "data-aos="fade-up"": It adds a fade-up animation effect to the navigation bar.
+            - Data Attribute: "data-aos-duration="2500"": It specifies the duration (in milliseconds) for the AOS (Animate On Scroll) animation.
+            - Data Attribute: "data-aos-delay="250"": It sets a delay (in milliseconds) before the AOS animation starts.
+            -->
+
+            <div class="container">
+                <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+                    <!-- 
+                    The button element has the following attributes:
+                    - Data Attribute: "data-bs-toggle="collapse"": It specifies that the button will toggle the visibility of a collapsible element.
+                    - Class: "navbar-toggler": It applies the styles for a navigation bar toggler button.
+                    - Data Attribute: "data-bs-target="#navcol-1"": It specifies the target element to be collapsed or expanded when the button is clicked. The value "#navcol-1" refers to the element with the ID "navcol-1".
+                    -->
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
                 <div class="collapse navbar-collapse" id="navcol-1" data-bs-target="#navcol-1" data-bs-smooth-scroll="true" data-bs-spy="scroll">
+                    <!-- 
+                    The div element has the following attributes:
+                    - Class: "collapse navbar-collapse": It applies the styles and behavior for a collapsible navbar. The "collapse" class indicates that the element is collapsible, and "navbar-collapse" applies the necessary styles for a navbar collapse.
+                    - ID: "navcol-1": It provides a unique identifier for the element, which can be used as a target for other elements or scripts.
+                    - Data Attribute: "data-bs-target="#navcol-1"": It specifies the target element to be collapsed or expanded. In this case, the value "#navcol-1" refers to the element with the ID "navcol-1".
+                    - Data Attribute: "data-bs-smooth-scroll="true"": It enables smooth scrolling behavior when navigating to anchor links within the page.
+                    - Data Attribute: "data-bs-spy="scroll"": It enables scrollspy behavior, which automatically updates the navigation based on the scroll position.
+                    -->
+
                     <ul class="navbar-nav text-start mx-auto">
+                            <!-- 
+                            The ul element has the following class:
+                            - Class: "navbar-nav text-start mx-auto": It applies styling and alignment to the unordered list.
+                            - "navbar-nav": It indicates that this list is intended for use in a navbar. It helps to style the list items as navigation items.
+                            - "text-start": It aligns the text content of the list items to the start (left in left-to-right languages).
+                            - "mx-auto": It centers the unordered list horizontally by setting the left and right margins to auto.
+                            -->                     
+
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
@@ -43,7 +79,17 @@
     </section>
     <section id="about" style="width: 100%;height: 150vh;">
         <div class="container py-4 py-xl-5" style="font-family: Montserrat, sans-serif;">
+             <!-- 
+            Class: "container py-4 py-xl-5": It applies the styles for a container element and adds padding to the top and bottom. 
+            -->
             <div class="row gy-4 gy-md-0">
+                <!-- 
+                The div element has the following class:
+                - Class: "row gy-4 gy-md-0": It applies styles for a grid row and adjusts the vertical gap between columns in a responsive manner.
+                - "row": It represents a grid row, containing one or more columns.
+                - "gy-4": It sets a vertical gap (margin) of 4 units between each row's columns.
+                - "gy-md-0": It removes the vertical gap (margin) between each row's columns for medium-sized screens and above.
+                -->            
                 <div class="col-md-6">
                     <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover picofme" id="Picofme" src="assets/img/PicOfMe13.png" width="456" height="850"></div>
                 </div>
