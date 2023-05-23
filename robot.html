@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script>
+  function myP5JSFunction(url) {
+    var iframe = document.getElementById("P5JSframe");
+    iframe.src = url;
+  }
+</script>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -37,7 +44,28 @@
     <script src="assets/js/Simple-Slider-swiper-bundle.min.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
 
-    <iframe src="https://editor.p5js.org/LeonDehullu/sketches/TGCuWhtuj" style="position: absolute; top: 1; left: 0; width: 100%; height: 100%; border: none;"></iframe>
+
+
+    <section>
+      <div class="navbarP5JS">
+        <a href="javascript:void(0);" onclick="loadGame('https://editor.p5js.org/LeonDehullu/full/_yrhF4XYk')">R2D2 sketch</a>
+        <a href="javascript:void(0);" onclick="loadGame('https://editor.p5js.org/LeonDehullu/full/v_MKsCerJ')">R2D2 Movements</a>
+        <a href="javascript:void(0);" onclick="loadGame('https://editor.p5js.org/LeonDehullu/full/TGCuWhtuj')">R2D2 Game</a>
+      </div>
+      <iframe id="gameFrame" src="https://editor.p5js.org/LeonDehullu/full/_yrhF4XYk" width="100%" height="600"></iframe>
+  
+      <script>
+        function loadGame(url) {
+          var gameFrame = document.getElementById("gameFrame");
+          gameFrame.src = url;
+        }
+      </script>
+    </section>
+
+
+
+
+
 
 
     <footer class="text-center">
@@ -64,3 +92,4 @@
 </body>
 
 </html>
+
