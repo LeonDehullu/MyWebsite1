@@ -16,8 +16,9 @@
   height: calc(var(--bs-icon-size) * 1.5);
 }
 
+/* Definieert de grootte van kleine pictogrammen */
 .bs-icon-sm {
-  --bs-icon-size: 1rem;
+  --bs-icon-size: 1rem;/* Grootte van het pictogram ingesteld op 1 rem (relatieve eenheid) */
 }
 
 .bs-icon-md {
