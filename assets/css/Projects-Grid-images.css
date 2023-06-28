@@ -1,4 +1,6 @@
+/* Zorgt ervoor dat het element zich aanpast om de volledige ruimte te bedekken */
 .fit-cover {
-  object-fit: cover;
+  object-fit: cover; /* Het element wordt geschaald en bijgesneden om de volledige ruimte te bedekken */
+  /* Andere opties: fill, scale down, contain */
 }
 
